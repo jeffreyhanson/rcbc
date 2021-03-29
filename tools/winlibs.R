@@ -3,9 +3,10 @@ if(getRversion() < "3.3.0") {
 }
 
 # Download cbc-2.9.8 from rwinlib
-if(!file.exists("../windows/cbc-2.9.8/include/coin/CbcSolver.hpp")){
+if(!file.exists("../windows/cbc-2.10.5/include/coin/CbcSolver.hpp")){
   download.file("https://github.com/jeffreyhanson/cbc/archive/v2.10.5.zip", "lib.zip", quiet = TRUE)
   dir.create("../windows", showWarnings = FALSE)
   unzip("lib.zip", exdir = "../windows")
   unlink("lib.zip")
 }
+
